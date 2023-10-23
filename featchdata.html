@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header & Footer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+</head>
+
+<body onload="showData()">
+
+  <!-- Image and text -->
+<header class="d-flex  justify-content-between text-info bg-dark pt-3 pb-3 align-middle">
+  <h1 class="text-left ms-7"> Employee Data</h1>
+
+  <ul class="d-flex justify-content-end me-3 align-items-center list">
+    <li class="list-group m-2 p-1"><a href="./index.html" class="text-decoration-none text-light">SignUp</a></li>
+    <li class="list-group m-2 p-1"><a href="./login.html" class="text-decoration-none text-light">SignIn</a></li>
+  </ul>
+
+</header>
+
+  <div class="contanier mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <table class=" table table-hover border-dark table-dark  align-middle">
+          <thead class="text-white ">
+            <tr>
+              <th>Id</th>
+              <th>post Id</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Body</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer class="site-footer bg-secondary text-white" id="contact">
+    <div class="footer-widgets">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="foot-about mt-5">
+              <h2>
+                <a class="fw-bold fs-2 text-white text-decoration-none" href="#"> </a>
+              </h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id sequi, illum reiciendis fuga unde mollitia
+                autem, explicabo neque dolorum provident velit quaerat modi quis sapiente, magnam earum doloremque
+                molestias? Quaerat.
+              </p>
+
+              <ul class="fs-3 d-flex flex-wrap align-items-center gap-4 list-unstyled">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f icon-hover-effect"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube icon-hover-effect"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-whatsapp icon-hover-effect"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram icon-hover-effect"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mt-5">
+            <div class="foot-contact">
+              <h2>Contact</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fa fa-phone"></i><span class="text-white ms-2">123456789</span>
+                </li>
+                <li>
+                  <i class="fa fa-envelope"></i><span><a href="#"
+                      class="text-decoration-none text-white ms-2">Email</a></span>
+                </li>
+                <li>
+                  <i class="fa fa-map-marker"></i><span class="text-white ms-2">raju colny,bangalore</span>
+                </li>
+              </ul>
+            </div>
+            <div class="subscribe-form">
+              <form class="was-validated d-flex align-items-center">
+                <input class="form-control w-75 px-3 py-2 rounded-3 border-0" type="email" placeholder="Your email"
+                  required />
+                <input class="px-3 py-2 rounded-3 border-0 ms-2 fw-bold  btn_L" data-bs-target="#exampleModalToggle"
+                  data-bs-toggle="modal" type="submit" value="Send" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="m-0 text-center p-3">
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg vxmlns="http://www.w3.org/2000/svg" iewBox="0 0 1440 320">
+      <path fill="#52c7cf" fill-opacity="1" d="M0,320L1440,32L1440,320L0,320Z"></path>
+    </svg>
+  </footer>
+
+
+  <script src="./data.js"></script>
+
+</body>
+
+</html>
